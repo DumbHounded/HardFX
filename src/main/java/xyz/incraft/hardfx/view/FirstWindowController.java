@@ -15,13 +15,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class FirstWindowController implements Callback<Class<?>, Object> {
 
-    @FXML
-    private Label textInfo;
-
-    public void setTextInfo(String textInfo) {
-        this.textInfo.setText(textInfo);
-    }
-
     @Override
     public Object call(Class<?> param) {
         return this;
